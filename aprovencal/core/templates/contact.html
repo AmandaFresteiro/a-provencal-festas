@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -5,43 +6,39 @@
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simple House - Contact Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/all.min.css" rel="stylesheet" />
-	<link href="css/templatemo-style.css" rel="stylesheet" />
+    <title>À Provençal Festas</title>
+	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href = "{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
 </head>
 
-<body> 
+<body>
 
 	<div class="container">
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+			<div class="parallax-window" data-parallax="scroll" data-image-src = "{% static 'img/a-provencal-marca.jpg' %}">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
-						<div class="col-md-6 col-12">
-							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
-							<div class="tm-site-text-box">
-								<h1 class="tm-site-title">Simple House</h1>
-								<h6 class="tm-site-description">new restaurant template</h6>	
-							</div>
-						</div>
 						<nav class="col-md-6 col-12 tm-nav">
 							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
-								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
-								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link active">Contact</a></li>
+								<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
+								<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
+								<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
+								<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
+								<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
 							</ul>
-						</nav>	
+						</nav>
 					</div>
 				</div>
 			</div>
 		</div>
 
+
 		<main>
 			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Contact Page</h2>
+				<h2 class="col-12 text-center tm-section-title">Entre em contato conosco!</h2>
 				<p class="col-12 text-center">You may use <a rel="nofollow" href="https://www.ltcclock.com/downloads/simple-contact-form/" target="_blank">Simple Contact Form</a> to send email to your inbox. You can modify and use this template for your website. Header image has a parallax effect. Total 3 HTML pages included in this template.</p>
 			</header>
 
@@ -100,7 +97,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="tm-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11196.961132529668!2d-43.38581128725845!3d-23.011063013218724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sth!4v1568649412152!5m2!1sen!2sth" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							<iframe src="https://www.google.com/maps/place/Estr.+Rodrigues+Caldas,+Rio+de+Janeiro+-+RJ/@-22.9248749,-43.3899975,19z/data=!4m5!3m4!1s0x9bd8e06d3770f1:0x25c267c1328b7a92!8m2!3d-22.9248613!4d-43.3875835" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 						</div>
 					</div>
 				</div>
@@ -143,8 +140,8 @@
             | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
 		</footer>
 	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/parallax.min.js"></script>
+	<script src = "{% static 'js/jquery.min.js' %}"></script>
+	<script src = "{% static 'js/parallax.min.js' %}"></script>
 	<script>
 		$(document).ready(function(){
 			var acc = document.getElementsByClassName("accordion");
