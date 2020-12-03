@@ -23,3 +23,7 @@ def candy(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def partykit(request):
+    return render(request, 'partykit.html')

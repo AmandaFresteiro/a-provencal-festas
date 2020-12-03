@@ -29,6 +29,7 @@
 							<ul class="tm-nav-ul">
 								<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
 								<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
+								<li class="tm-nav-li"><a href="{% url 'partykit' %}" class="tm-nav-link">Kit Festas</a></li>
 								<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
 								<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
 								<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
@@ -289,7 +290,12 @@
 				<div class="row">
 					<div class="col-md-6">
 						<figure class="tm-description-figure">
-							<img src = "{% static 'img/img-01.jpg' %}" alt="Image" class="img-fluid" />
+							<video width="500" height="400" controls="controls" autoplay="autoplay">
+							<source src="{% static 'img/IMG_9072.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="320" height="240" src="{% static 'img/IMG_9072.MOV' %}">
+							</object>
+							</video>
 						</figure>
 					</div>
 					<div class="col-md-6">

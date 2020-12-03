@@ -308,10 +308,10 @@ p, address {
 
 .tm-nav-link {
   color: #8A0868;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: bolder;
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .tm-nav-link.active,
