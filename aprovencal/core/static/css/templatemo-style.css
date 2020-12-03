@@ -473,19 +473,23 @@ p, address {
   align-self: flex-end;
 }
 
-.tm-footer {
+
+
+
+/*.tm-footer {
   padding: 25px 15px;
   margin-top: 40px;
 }
 
 .tm-footer a {
+  background-color: #B40486;
   color: #626364;
   text-decoration: none;
 }
 
 .tm-footer a:hover {
   color: #1A6692;
-}
+}*/
 
 /* About */
 .tm-persons {
@@ -854,4 +858,8 @@ address {
 
 .panel p {
   padding: 5px 20px 30px;
+}
+
+.copyright {
+    color: #ffffff;
 }

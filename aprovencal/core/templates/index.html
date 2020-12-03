@@ -10,6 +10,10 @@
 	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
 	<link href = "{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body> 
@@ -134,7 +138,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Salad Menu One</h4>
+								<h4 class="tm-gallery-title">Cupcake - Mickey Safari</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -143,7 +147,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Second Title Salad</h4>
+								<h4 class="tm-gallery-title">Bombons - Mickey Safari</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -152,7 +156,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Third Salad Item</h4>
+								<h4 class="tm-gallery-title">Brownie de Chocolate Personalizado</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -161,7 +165,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Superior Salad</h4>
+								<h4 class="tm-gallery-title">Pirulitos de Chocolate Personalizados</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -170,7 +174,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Sed ultricies dui</h4>
+								<h4 class="tm-gallery-title">Cupcakes - Ferrari</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -179,7 +183,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
+								<h4 class="tm-gallery-title">Bombons - Galinha Pintadinha</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -188,7 +192,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
+								<h4 class="tm-gallery-title">Bombons - Rosas</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -197,7 +201,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
+								<h4 class="tm-gallery-title">Brownie - Homem Aranha</h4>
 								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
 							</figcaption>
 						</figure>
@@ -292,16 +296,20 @@
 						<div class="tm-description-box"> 
 							<h4 class="tm-gallery-title">À Provençal Festas</h4>
 							<p class="tm-mb-45"> Conheça mais sobre nossa empresa clicando no link abaixo ou entrando em contato com um de nossos atendentes para maiores dúvidas ou orçamentos. Aqui, o cliente vem em primeiro lugar! Siga nossas redes sociais para acompanhar mais de pertinho nosso trabalho!</p>
-							<a href="about.html" class="tm-btn tm-btn-default tm-right">Quem Somos</a>
+							<a href="{% url 'about' %}" class="tm-btn tm-btn-default tm-right">Quem Somos</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-
-		<footer class="tm-footer text-center">
-			<p>Copyright &copy; 2020 À Provençal Festas</p>
-		</footer>
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+	<p class="copyright"> &copy; 2020 À Provençal Festas<br>
+		Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a> | Leonardo Melo <a href="https://www.linkedin.com/in/leonardo-campos-melo"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a></p>
+	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+	<a href="2196555-8817"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+</footer>
 	</div>
 	<script src = "{% static 'js/jquery.min.js' %}"></script>
 	<script src = "{% static 'js/parallax.min.js' %}"></script>
