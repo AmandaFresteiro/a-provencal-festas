@@ -282,41 +282,43 @@ p, address {
 }
 
 .tm-nav {
-  text-align: right;
-  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 20px;
 }
 
 .tm-nav-ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex;
 }
 
 .tm-nav-li {
+  text-align: center;
   list-style: none;
-  display: block;
-  margin-bottom: 0;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @media (max-width: 991px) {
   .tm-nav-li {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }
 
 .tm-nav-link {
-  color: #8A0868;
-  font-size: 13px;
-  font-weight: bolder;
+  color: #DF01D7;
+  font-size: 35px;
+  font-family: Edwardian Script ITC;
   text-decoration: none;
   padding-bottom: 30px;
 }
 
 .tm-nav-link.active,
 .tm-nav-link:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid brown;
 }
 
 .tm-welcome-section {

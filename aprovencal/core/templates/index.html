@@ -25,20 +25,21 @@
 			<div class="parallax-window" data-parallax="scroll" data-image-src = "{% static 'img/a-provencal-marca.jpg' %}">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
-						<nav class="col-md-6 col-12 tm-nav">
-							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
-								<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
-								<li class="tm-nav-li"><a href="{% url 'partykit' %}" class="tm-nav-link">Kit Festas</a></li>
-								<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
-								<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
-								<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
-							</ul>
-						</nav>	
+
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<nav class="col-md-6 col-12 tm-nav">
+			<ul class="tm-nav-ul">
+				<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
+				<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
+				<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
+				<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
+				<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
+			</ul>
+		</nav>
 
 		<main>
 			<header class="row tm-welcome-section">
@@ -64,7 +65,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo ROBLOX</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/01.jpg' %}">Bolo ROBLOX</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios inspirado no game online Roblox!</p>
 							</figcaption>
 						</figure>
@@ -73,7 +74,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo NUTELLA</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/02.jpg' %}">Bolo NUTELLA</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios, pote de nutella, bicoitos, docinhos e chocolates!</p>
 							</figcaption>
 						</figure>
@@ -82,7 +83,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo PEQUENO PRÍNCIPE</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/03.jpg' %}">Bolo PEQUENO PRÍNCIPE</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, personalizado no tema O Pequeno Príncipe!</p>
 							</figcaption>
 						</figure>
@@ -91,7 +92,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo HALLOWEEN</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/04.jpg' %}">Bolo HALLOWEEN</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, feito especialmente para a data de Halloween!</p>
 							</figcaption>
 						</figure>
@@ -100,7 +101,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo BALDE DE GELO</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/05.jpg' %}">Bolo BALDE DE GELO</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, envolto com kit kat e, para simular o gelo, gelatina saborosa e incolor.</p>
 							</figcaption>
 						</figure>
@@ -109,7 +110,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo FERRARI</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/06.jpg' %}">Bolo FERRARI</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, personalizado com o tema Fórmula 1!</p>
 							</figcaption>
 						</figure>
@@ -118,7 +119,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo HELLO KITTY</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/07.jpg' %}">Bolo HELLO KITTY</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, personalizado com o tema Hello Kitty!</p>
 							</figcaption>
 						</figure>
@@ -127,7 +128,7 @@
 						<figure>
 							<img src = "{% static 'img/gallery/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo VIDEO GAME</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery/08.jpg' %}">Bolo VIDEO GAME</a></h4>
 								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, com bombons de chocolate simulando controles de videogame e muito.. MUITO chocolate!</p>							</figcaption>
 						</figure>
 					</article>
@@ -139,8 +140,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Cupcake - Mickey Safari</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/01.jpg' %}">Cupcake - Mickey Safari</a></h4>
+								<p class="tm-gallery-description">Cupcakes totalmente personalizados de baunilha, recheados com doce de leite e coco, cobertos com pasta americana comestível.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -148,8 +149,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bombons - Mickey Safari</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/02.jpg' %}">Bombons - Mickey Safari</a></h4>
+								<p class="tm-gallery-description">Bombons de chocolate belga recheados de brigadeiro trufado e morangos.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -157,8 +158,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Brownie de Chocolate Personalizado</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/03.jpg' %}">Brownie de Chocolate Personalizado</a></h4>
+								<p class="tm-gallery-description">Pirulitos de chocolate belga com recheio de brownie com doce de leite.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -166,8 +167,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Pirulitos de Chocolate Personalizados</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/04.jpg' %}">Pirulitos de Chocolate Personalizados</a></h4>
+								<p class="tm-gallery-description">Pirulitos de chocolate belga totalmente personalizados de acordo com o tema da sua festa.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -175,8 +176,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Cupcakes - Ferrari</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/05.jpg' %}">Cupcakes - Ferrari</a></h4>
+								<p class="tm-gallery-description">Cupcakes recheados de brigadeiro trufado e personalizados de acordo com o tema da sua festa.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -184,8 +185,8 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bombons - Galinha Pintadinha</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/06.jpg' %}">Bombons - Galinha Pintadinha</a></h4>
+								<p class="tm-gallery-description">Bombom de chocolate belga branco recheados de Brownie com brigadeiro e personalizado com pasta americana cosmestível.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -193,17 +194,17 @@
 						<figure>
 							<img src = "{% static 'img/gallery-2/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bombons - Rosas</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/07.jpg' %}">Bombons - Rosas</a></h4>
+								<p class="tm-gallery-description">Mini trufas feitas de chocolate belga e recheadas com geléia de morango caseira.</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery-2/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-2/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
 							<figcaption>
-								<h4 class="tm-gallery-title">Brownie - Homem Aranha</h4>
-								<p class="tm-gallery-description">Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/08.jpg' %}">Brownie - Homem Aranha</a></h4>
+								<p class="tm-gallery-description">Brownie de chocolate belga com recheio de doce de leite, personalizado de acordo com o tema da sua festa.</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -213,75 +214,74 @@
 				<div id="tm-gallery-page-festas" class="tm-gallery-page hidden">
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Noodle One</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/01.jpg' %}">O Pequeno Príncipe</a></h4>
+								<p class="tm-gallery-description">Linda decoração completa com cilindro, painel rendondo e arco de bolas desconstruído, de acordo com o tema. Além dos doces, é claro! .</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Noodle Second</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/02.jpg' %}">Branca de Neve</a></h4>
+								<p class="tm-gallery-description">E para uma princesa... só mesmo outra princesa! Branca de neve e os sete anões! Decoração completa e personalizada.</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Third Soft Noodle</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/03.jpg' %}">Marinheiro</a></h4>
+								<p class="tm-gallery-description">Decoração muito fofa e toda personalizada, com muita atenção em todos os detalhes para um bebê que chegará em breve!</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Aliquam sagittis</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/04.jpg' %}">Homem-aranha</a></h4>
+								<p class="tm-gallery-description">Uma decoração toda pensada nos mínimos detalhes com bolo, doces, bombons e pirulitos personalizados.</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/05.jpg' %}">Unicórnio</a></h4>
+								<p class="tm-gallery-description">Um sonho para as meninas de plantão! Tudo em tom pastel e muuuita delicadeza em todos os detalhes!</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Quisque et felis eros</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/06.jpg' %}">Batizado - Princesa</a></h4>
+								<p class="tm-gallery-description">É fofura que fala, né?! Muito capricho e gostosuras nessa decoração!</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Quisque et felis eros</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/07.jpg' %}">Mario Bross</a></h4>
+								<p class="tm-gallery-description">Quem aí gosta de um game? Super Mario Bross encantando em uma pesa super gamer!</p>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-3/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Quisque et felis eros</h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/08.jpg' %}">Bebê Mustache</a></h4>
+								<p class="tm-gallery-description">O bigodinho mais famoso do mundo virou tema desta linda decoração para chá de bebê, com charutos de chocolate belga , cupcakes... um doce mais gostoso que o outro!</p>
+							</figcaption>						</figure>
 					</article>
 
 				</div> <!-- gallery page 3 -->
@@ -290,7 +290,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<figure class="tm-description-figure">
-							<video width="500" height="400" controls="controls" autoplay="autoplay">
+							<video width="500" height="400" controls="controls">
 							<source src="{% static 'img/IMG_9072.mp4' %}" type="video/mp4">
 							<object data="" width="320" height="240">
 							<embed width="320" height="240" src="{% static 'img/IMG_9072.MOV' %}">
@@ -314,7 +314,7 @@
 	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
 	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-	<a href="2196555-8817"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+	<a href=" https://wa.me/5521969372134?text=Olá,%20bem-%20vindo(a)%20À%20Provençal%20Festas!%20Aguarde,%20já%20já%20iremos%20atendê-lo!"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
 </footer>
 	</div>
 	<script src = "{% static 'js/jquery.min.js' %}"></script>
