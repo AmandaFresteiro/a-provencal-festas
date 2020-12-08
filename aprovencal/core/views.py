@@ -13,6 +13,10 @@ def cakes(request):
     return render(request, 'cakes.html')
 
 
+def cakes_photo(request):
+    return render(request, 'cakes-photo.html')
+
+
 def party(request):
     return render(request, 'party.html')
 
@@ -27,3 +31,7 @@ def about(request):
 
 def partykit(request):
     return render(request, 'partykit.html')
+
+
+def start(request):
+    return render(request, 'start.html')

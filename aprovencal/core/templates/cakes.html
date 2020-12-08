@@ -31,225 +31,167 @@
 			</div>
 		</div>
 
-		<nav class="col-md-6 col-12 tm-nav">
-			<ul class="tm-nav-ul">
-				<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
-				<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
-				<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
-				<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
-				<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
-			</ul>
-		</nav>
+		<div class="topnav" id="myTopnav">
+			<a href="{% url 'start' %}" class="active">Início</a>
+			<a href="{% url 'about' %}">Quem Somos</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Bolos
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dropdown-content">
+      			<a href="{% url 'cakes' %}">Vídeos</a>
+				<a href="{% url 'cakes-photo' %}">Fotos</a>
+      			<a href="{% url 'index' %}">Kit Festa</a>
+    		</div>
+  		</div>
+  		<a href="{% url 'candy'%}">Doces</a>
+		<a href="{% url 'contact'%}">Contato</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
 
 		<main>
 			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Bolos</h2>
+				<h2 class="col-12 text-center tm-section-title">Bolos - Vídeos</h2>
 				<p class="col-12 text-center">Nossos bolo são completamente artesanais, utilizando materiais de primeira qualidade. Podem variar de 3 à 6 camadas e, para cada camada, um recheio a sua escolha. Utilizamos pasta americana comestível para a decoração
 				dos bolos que, por sua vez, são entregues em uma caixa de acetato com a tampa em acrílico possibilitando a visibilidade do bolo mesmo embalado. Totalmente personalizado. Nossa equipe fica em contato com você durante todo o processo pra garantir sua
 				total satisfação. Abaixo, alguns dos nossos trabalhos mais recentes:</p>
 			</header>
 
-			<div class="tm-paging-links">
-				<nav>
-					<ul class="pagination">
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Videos</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Kit Festa</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Galeria de Fotos</a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<!-- Gallery vídeos -->
-			<div class="row tm-gallery">
-				<!-- gallery page 1 -->
-				<div id="tm-gallery-page-videos" class="tm-gallery-page">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<video width="300" height="400" controls="controls">
+			<div class="container">
+  				<div id="container-row-videos" class="row">
+   					 <div class="col">
+							<video width="400" height="300" controls="controls">
 							<source src="{% static 'img/videobolos/dino.mp4' %}" type="video/mp4">
 							<object data="" width="320" height="240">
-							<embed width="300" height="400" src="{% static 'img/videobolos/dino.mp4' %}}">
+							<embed width="300" height="200" src="{% static 'img/videobolos/dino.mp4' %}">
 							</object>
 							</video>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<video width="300" height="400" controls="controls">
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
 							<source src="{% static 'img/videobolos/roblox.mp4' %}" type="video/mp4">
 							<object data="" width="320" height="240">
-							<embed width="300" height="400" src="{% static 'img/videobolos/roblox.mp4' %}}">
+							<embed width="300" height="200" src="{% static 'img/videobolos/roblox.mp4' %}">
 							</object>
 							</video>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<video width="300" height="300" controls="controls">
-							<source src="{% static 'img/videobolos/galinha.mp4' %}" type="video/mp4">
-							<object data="" width="320" height="240" border="10">
-							<embed width="300" height="400" src="{% static 'img/videobolos/roblox.mp4' %}}">
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/halloween.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
 							</object>
 							</video>
-						</figure>
-					</article>
+					</div>
+				</div>
+			</div>
+					<br>
+					<br>
+					<br>
+					<br>
+			<div class="container">
+  				<div id="container-row-videos" class="row">
+   					 <div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/patrulha.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/ferrari.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/pequenoprincipe.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+				</div>
+			</div>
+					<br>
+					<br>
+					<br>
+					<br>
+			<div class="container">
+  				<div id="container-row-videos" class="row">
+   					 <div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/candy.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/mickey.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/cozinha.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+				</div>
+			</div>
+				<br>
+				<br>
+				<br>
+				<br>
+			<div class="container">
+  				<div id="container-row-videos" class="row">
+   					 <div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/cerveja.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/paw.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+					<div class="col">
+							<video width="400" height="300" controls="controls">
+							<source src="{% static 'img/videobolos/junina.mp4' %}" type="video/mp4">
+							<object data="" width="320" height="240">
+							<embed width="300" height="200" src="{% static 'img/videobolos/candy.mp4' %}">
+							</object>
+							</video>
+					</div>
+				</div>
+			</div>
+				<br>
+				<br>
+				<br>
+				<br>
+		</main>
 
 
-				<!-- gallery page 2 -->
-				<div id="tm-gallery-page-doces" class="tm-gallery-page hidden">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/01.jpg' %}">Cupcake - Mickey Safari</a></h4>
-								<p class="tm-gallery-description">Cupcakes totalmente personalizados de baunilha, recheados com doce de leite e coco, cobertos com pasta americana comestível.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/02.jpg' %}">Bombons - Mickey Safari</a></h4>
-								<p class="tm-gallery-description">Bombons de chocolate belga recheados de brigadeiro trufado e morangos.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/03.jpg' %}">Brownie de Chocolate Personalizado</a></h4>
-								<p class="tm-gallery-description">Pirulitos de chocolate belga com recheio de brownie com doce de leite.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/04.jpg' %}">Pirulitos de Chocolate Personalizados</a></h4>
-								<p class="tm-gallery-description">Pirulitos de chocolate belga totalmente personalizados de acordo com o tema da sua festa.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/05.jpg' %}">Cupcakes - Ferrari</a></h4>
-								<p class="tm-gallery-description">Cupcakes recheados de brigadeiro trufado e personalizados de acordo com o tema da sua festa.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/06.jpg' %}">Bombons - Galinha Pintadinha</a></h4>
-								<p class="tm-gallery-description">Bombom de chocolate belga branco recheados de Brownie com brigadeiro e personalizado com pasta americana cosmestível.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/07.jpg' %}">Bombons - Rosas</a></h4>
-								<p class="tm-gallery-description">Mini trufas feitas de chocolate belga e recheadas com geléia de morango caseira.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-2/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-2/08.jpg' %}">Brownie - Homem Aranha</a></h4>
-								<p class="tm-gallery-description">Brownie de chocolate belga com recheio de doce de leite, personalizado de acordo com o tema da sua festa.</p>
-							</figcaption>
-						</figure>
-					</article>
-				</div> <!-- gallery page 2 -->
-
-				<!-- gallery page 3 -->
-				<div id="tm-gallery-page-festas" class="tm-gallery-page hidden">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/01.jpg' %}">O Pequeno Príncipe</a></h4>
-								<p class="tm-gallery-description">Decoração, doces, bolo, painéis, assistência durante toda a festa.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/02.jpg' %}">Branca de Neve</a></h4>
-								<p class="tm-gallery-description">Decoração, doces, bolo, painéis, assistência durante toda a festa.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/03.jpg' %}">Marinheiro</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/04.jpg' %}">Homem-aranha</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/05.jpg' %}">Unicórnio</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/06.jpg' %}">Batizado - Princesa</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/07.jpg' %}">Mario Bross</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src = "{% static 'img/gallery-3/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/08.jpg' %}">Ursinho Teddy</a></h4>
-								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							</figcaption>						</figure>
-					</article>
-
-				</div> <!-- gallery page 3 -->
 
 <footer class="w3-container w3-purple w3-center w3-margin-top">
-	<p class="copyright"> &copy; 2020 À Provençal Festas<br>
-		Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a> | Leonardo Melo <a href="https://www.linkedin.com/in/leonardo-campos-melo"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a></p>
+	<p class="copyright"> &copy; 2020 À Provençal Festas | Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+		<br>
 	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
 	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>

@@ -1,0 +1,396 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>À Provençal Festas</title>
+	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href = "{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src = "{% static 'img/a-provencal-marca.jpg' %}">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="topnav" id="myTopnav">
+			<a href="{% url 'start' %}" class="active">Início</a>
+			<a href="{% url 'about' %}">Quem Somos</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Bolos
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dropdown-content">
+      			<a href="{% url 'cakes' %}">Vídeos</a>
+				<a href="{% url 'index' %}">Fotos</a>
+      			<a href="{% url 'index' %}">Kit Festa</a>
+    		</div>
+  		</div>
+  		<a href="{% url 'candy'%}">Doces</a>
+		<a href="{% url 'contact'%}">Contato</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Bolos - Galeria de Fotos</h2>
+			</header>
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">1</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">2</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">3</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-1" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/coca-cola.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/coca-cola.jpg' %}">Bolo Coca-Cola</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/starwars.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/starwars.jpg' %}">Bolo STAR-WARS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/princesa.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/princesa.jpg' %}">Bolo PRINCESA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/ladybug.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/ladybug.jpg' %}">Bolo LADYBUG</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/hp.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/hp.jpg' %}">Bolo HARRY POTTER</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/naked-cake.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/naked-cake.jpg' %}">Bolo NAKED-CAKE</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/nutella.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/nutella.jpg' %}">Bolo NUTELLA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/moana.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/moana.jpg' %}">Bolo MOANA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/circo.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/circo.jpg' %}">Bolo CIRCO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/branca-de-neve.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/branca-de-neve.jpg' %}">Bolo BRANCA DE NEVE</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/animais.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/animais.jpg' %}">Bolo PETS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/unicornio.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/unicornio.jpg' %}">Bolo UNICÓRNIO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+				</div>
+				
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-2" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/mulher-maravilha.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/mulher-maravilha.jpg' %}">Bolo MULHER MARAVILHA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/escoteiro.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/escoteiro.jpg' %}">Bolo ESCOTEIRO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/girassol.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/girassol.jpg' %}">Bolo Girassol</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/pow.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/pow.jpg' %}">Bolo PATRULHA CANINA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/bolo-kitkat.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/bolo-kitkat.jpg' %}">Bolo KIT-KAT</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/hellokitty.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/hellokitty.jpg' %}">Bolo HELLO-KITTY</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/mariobross.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/mariobross.jpg' %}">Bolo MARIO BROSS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/eucaristia.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/eucaristia.jpg' %}">Bolo EUCARISTIA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/petroleiro.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/petroleiro.jpg' %}">Bolo PETROLEIRO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/80.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/80.jpg' %}">Bolo 80 ANOS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/naked.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/naked.jpg' %}">Bolo NAKED-CAKE</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/starwars2.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/starwars2.jpg' %}">Bolo STAR-WARS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-3" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/diversao.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/diversao.jpg' %}">Bolo DIVERSÃO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/batizado.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/batizado.jpg' %}">Bolo BATIZADO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/vasco.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/vasco.jpg' %}">Bolo VASCO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/zoo.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/zoo.jpg' %}">Bolo ZOO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/chaves.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/chaves.jpg' %}">Bolo Chaves</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/boteco.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/boteco.jpg' %}">Bolo BOTECO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/mar.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/mar.jpg' %}">Bolo FUNDO DO MAR</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/menina.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/menina.jpg' %}">Bolo PERSONALIZADO</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/revelacao.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/revelacao.jpg' %}">Bolo REVELAÇÃO BEBÊ</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/bee.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/bee.jpg' %}">Bolo ABELHINHAS</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/surfista.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/surfista.jpg' %}">Bolo SURFISTA</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cakes-photo/urso.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cakes-photo/urso.jpg' %}">Bolo URSINHO DE 3 ANDARES</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+				</div>
+				</div>
+		</main>
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+	<p class="copyright"> &copy; 2020 À Provençal Festas | Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+		<br>
+	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+	<a href=" https://wa.me/5521969372134?text=Olá,%20bem-%20vindo(a)%20À%20Provençal%20Festas!%20Aguarde,%20já%20já%20iremos%20atendê-lo!"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+</footer>
+	</div>
+	<script src = "{% static 'js/jquery.min.js' %}"></script>
+	<script src = "{% static 'js/parallax.min.js' %}"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
