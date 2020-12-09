@@ -994,4 +994,8 @@ address {
     width: 100%;
     text-align: left;
   }
+
+.container{
+    text-align: center;
 }
+

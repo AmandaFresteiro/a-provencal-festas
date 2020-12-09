@@ -10,6 +10,10 @@
 	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
 	<link href = "{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -21,74 +25,72 @@
 			<div class="parallax-window" data-parallax="scroll" data-image-src = "{% static 'img/a-provencal-marca.jpg' %}">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
-						<nav class="col-md-6 col-12 tm-nav">
-							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="{% url 'index' %}" class="tm-nav-link active">Início</a></li>
-								<li class="tm-nav-li"><a href="{% url 'party' %}" class="tm-nav-link">Festas</a></li>
-								<li class="tm-nav-li"><a href="{% url 'cakes' %}" class="tm-nav-link">Bolos</a></li>
-								<li class="tm-nav-li"><a href="{% url 'candy' %}" class="tm-nav-link">Doces</a></li>
-								<li class="tm-nav-li"><a href="{% url 'contact' %}" class="tm-nav-link">Contato</a></li>
-							</ul>
-						</nav>
+
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="topnav" id="myTopnav">
+			<a href="{% url 'start' %}" class="active">Início</a>
+			<a href="{% url 'about' %}">Quem Somos</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Bolos
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dropdown-content">
+      			<a href="{% url 'cakes' %}">Vídeos</a>
+				<a href="{% url 'cakes-photo' %}">Fotos</a>
+      			<a href="{% url 'partykit' %}">Kit Festa</a>
+    		</div>
+  		</div>
+  		<a href="{% url 'candy'%}">Doces</a>
+		<a href="{% url 'party'%}">Festas</a>
+		<a href="{% url 'contact'%}">Contato</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
 
 		<main>
 			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Bem vindo, À Provençal Festas!</h2>
+				<h2 class="col-12 text-center tm-section-title">Doces Personalizados!</h2>
 				<p class="col-12 text-center">Quer realizar a festa dos seus sonhos? Totalmente personalizada? Aqui é o seu lugar! Somos uma empresa familiar onde a sua satisfação é o que mais nos importa! Entre em contato conosco e <a rel="nofollow" href="contacts.html">agende</a> sua festa ainda hoje! </p>
 			</header>
-			
-			<div class="tm-paging-links">
-				<nav>
-					<ul>
-						<li class="tm-paging-item"><a href="row tm-gallery" class="tm-paging-link active">Bolos</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Doces</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Festas</a></li>
-					</ul>
-				</nav>
-			</div>
+
 
 			<!-- Gallery -->
 			<div class="row tm-gallery">
 				<!-- gallery page 1 -->
-				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
+				<div class="tm-gallery-page">
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/candy/charutos.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo ROBLOX</h4>
-								<p class="tm-gallery-description">Bolo com três camadas e recheios inspirado no game online Roblox!</p>
+								<h4 class="tm-gallery-title">Charutos de Chocolate</h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/candy/ostra.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo NUTELLA</h4>
-								<p class="tm-gallery-description">Bolo com três camadas e recheios, pote de nutella, bicoitos, docinhos e chocolates!</p>
+								<h4 class="tm-gallery-title">Docinho de coco - Tema fundo do mar</h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/candy/capacete.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo PEQUENO PRÍNCIPE</h4>
-								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, personalizado no tema O Pequeno Príncipe!</p>
+								<h4 class="tm-gallery-title">Bombons Trufados - Tema F1</h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/gallery/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/candy/pirulitourso.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bolo HALLOWEEN</h4>
-								<p class="tm-gallery-description">Bolo com três camadas e recheios à sua escolha, feito especialmente para a data de Halloween!</p>
+								<h4 class="tm-gallery-title">Pirulito de Cholate - Tema Ursinho</h4>
 							</figcaption>
 						</figure>
 					</article>
@@ -258,27 +260,16 @@
 
 				</div> <!-- gallery page 3 -->
 			</div>
-			<div class="tm-section tm-container-inner">
-				<div class="row">
-					<div class="col-md-6">
-						<figure class="tm-description-figure">
-							<img src = "{% static 'img/img-01.jpg' %}" alt="Image" class="img-fluid" />
-						</figure>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">À Provençal Festas</h4>
-							<p class="tm-mb-45"> Conheça mais sobre nossa empresa clicando no link abaixo ou entrando em contato com um de nossos atendentes para maiores dúvidas ou orçamentos. Aqui, o cliente vem em primeiro lugar! Siga nossas redes sociais para acompanhar mais de pertinho nosso trabalho!</p>
-							<a href="about.html" class="tm-btn tm-btn-default tm-right">Quem Somos</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</main>
 
-		<footer class="tm-footer text-center">
-			<p>Copyright &copy; 2020 À Provençal Festas</p>
-		</footer>
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+	<p class="copyright"> &copy; 2020 À Provençal Festas | Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+		<br>
+	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+	<a href=" https://wa.me/5521969372134?text=Olá,%20bem-%20vindo(a)%20À%20Provençal%20Festas!%20Aguarde,%20já%20já%20iremos%20atendê-lo!"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+</footer>
 	</div>
 	<script src = "{% static 'js/jquery.min.js' %}"></script>
 	<script src = "{% static 'js/parallax.min.js' %}"></script>
@@ -287,7 +278,7 @@
 			// Handle click on paging links
 			$('.tm-paging-link').click(function(e){
 				e.preventDefault();
-				
+
 				var page = $(this).text().toLowerCase();
 				$('.tm-gallery-page').addClass('hidden');
 				$('#tm-gallery-page-' + page).removeClass('hidden');
