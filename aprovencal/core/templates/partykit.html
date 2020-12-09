@@ -1,10 +1,132 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>À Provençal Festas</title>
+	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href = "{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
 
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src = "{% static 'img/a-provencal-marca.jpg' %}">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="topnav" id="myTopnav">
+			<a href="{% url 'start' %}" class="active">Início</a>
+			<a href="{% url 'about' %}">Quem Somos</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Bolos
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dropdown-content">
+      			<a href="{% url 'cakes' %}">Vídeos</a>
+				<a href="{% url 'cakes-photo' %}">Fotos</a>
+      			<a href="{% url 'partykit' %}">Kit Festa</a>
+    		</div>
+  		</div>
+  		<a href="{% url 'candy'%}">Doces</a>
+		<a href="{% url 'contact'%}">Contato</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Kit Festa!</h2>
+			</header>
+	<div class="tm-section tm-container-inner">
+			<div class="row">
+				<div class="col-md-6">
+					<figure class="tm-description-figure">
+					<img src = "{% static 'img/caneca.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<div class="tm-description-box">
+						<br><br>
+						<h4 class="tm-gallery-title">À Provençal Festas - KIT FESTAS</h4>
+						<p class="tm-mb-45">Composto de 1 bolo para 10 pessoas com:<br>
+											- Três recheios;<br>
+											- 6 pirulitos de chocolate;<br>
+											- 6 mini trufas;<br>
+											- 6 cupcakes;<br>
+											- 20 docinhos tradicionais;<br>
+											- 1 balão bubble; <br><br>
+											Tudo personalizado no tema da sua festa!!!!</p>
+						<br><br><br>
+						<a href="{% url 'contact' %}" class="tm-btn tm-btn-default tm-right">Garanta o seu agora mesmo!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<br><br><br>
+		<div class="w3-container w3-purple">
+  				<h3>Acompanhe aqui nossas entregas mais recentes! </h3>
+		</div>
+			<br><br><br><br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img src = "{% static 'img/kit-festa/gamer.jpg' %}" alt="Image" class="w3-hover-opacity" style="margin-right: 210px" height="300" width="500"/><br><br>
+					<a href="{% static 'img/kit-festa/gamer.jpg' %}" class="tm-btn tm-btn-default tm-right">Veja Mais</a>
+				</div>
+				<div class="col">
+					<img src = "{% static 'img/kit-festa/cozinha.jpg' %}" alt="Image" class="w3-hover-opacity" height="300" width="500"/><br><br>
+					<a href="{% static 'img/kit-festa/cozinha.jpg' %}" class="tm-btn tm-btn-default tm-right">Veja Mais</a>
+				</div>
+			</div>
+		</div>
+				<br><br><br><br>
+
+
+
+
+
+		</main>
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+	<p class="copyright"> &copy; 2020 À Provençal Festas | Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+		<br>
+	<a href="https://pt-br.facebook.com/aprovencalfestas"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/aprovencalfestas/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	<a href="aprovencalfestas@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+	<a href=" https://wa.me/5521969372134?text=Olá,%20bem-%20vindo(a)%20À%20Provençal%20Festas!%20Aguarde,%20já%20já%20iremos%20atendê-lo!"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+</footer>
+	</div>
+	<script src = "{% static 'js/jquery.min.js' %}"></script>
+	<script src = "{% static 'js/parallax.min.js' %}"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
 </body>
 </html>
