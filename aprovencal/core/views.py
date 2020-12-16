@@ -35,3 +35,5 @@ def partykit(request):
 
 def start(request):
     return render(request, 'start.html')
+
+

@@ -50,54 +50,382 @@
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
-
 		<main>
 			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Doces Personalizados!</h2>
-				<p class="col-12 text-center">Quer realizar a festa dos seus sonhos? Totalmente personalizada? Aqui é o seu lugar! Somos uma empresa familiar onde a sua satisfação é o que mais nos importa! Entre em contato conosco e <a rel="nofollow" href="contacts.html">agende</a> sua festa ainda hoje! </p>
+				<h2 class="col-12 text-center tm-section-title">Conheça nossos doces personalizados!</h2>
+				<p class="col-12 text-center">Quer realizar a festa dos seus sonhos? Totalmente personalizada? Aqui é o seu lugar! Somos uma empresa familiar onde a sua satisfação é o que mais nos importa! Entre em contato conosco e <a rel="nofollow" href="{% url 'contact' %}">agende</a> sua festa ainda hoje! </p>
 			</header>
-
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Pirulitos</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Trufas</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Cupcakes</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Docinhos</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Bombons</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Brownie</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Em Breve!</a></li>
+					</ul>
+				</nav>
+			</div>
 
 			<!-- Gallery -->
 			<div class="row tm-gallery">
 				<!-- gallery page 1 -->
-				<div class="tm-gallery-page">
+				<div id="tm-gallery-page-pirulitos" class="tm-gallery-page">
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/candy/charutos.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-candy/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Charutos de Chocolate</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/01.jpg' %}">Minnie Rosa</a></h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/candy/ostra.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-candy/09.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Docinho de coco - Tema fundo do mar</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/09.jpg' %}">Galinha Pintadina</a></h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/candy/capacete.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-candy/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Bombons Trufados - Tema F1</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/03.jpg' %}">Dragon Ball</a></h4>
 							</figcaption>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src = "{% static 'img/candy/pirulitourso.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src = "{% static 'img/gallery-candy/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Pirulito de Cholate - Tema Ursinho</h4>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/04.jpg' %}">Rosas Personalizado</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/10.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/10.jpg' %}">Hello Kitty</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/06.jpg' %}">Mickey Safari</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/07.jpg' %}">Minions</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/08.jpg' %}">Fórmula 1</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/02.jpg' %}">Super Mario Bross</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/05.jpg' %}">Roblox</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-candy/11.jpeg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/11.jpeg' %}">Pequeno Príncipe</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure><img src = "{% static 'img/gallery-candy/12.jpeg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-candy/12.jpeg' %}">Homem Aranha</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 1 -->
+				
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-trufas" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/01.jpg' %}">Minnie Rosa</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/02.jpg' %}">Rosas Personalizadas</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/03.jpg' %}">Animaiszinhos</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/04.jpeg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/04.jpeg' %}">Aviãozinho</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/05.jpg' %}">Ovos Galinha Pintadinha</a></h4>
+
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/06.jpg' %}">Fórmula 1</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/07.jpg' %}">Homem Aranha</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-trufas/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img"/>
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-trufas/08.jpg' %}">Dinossauros</a></h4>
+
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-cupcakes" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/01.jpg' %}">Minnie Rosa</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/02.jpg' %}">Hello Kitty</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/03.jpg' %}">Galinha Pintadinha</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/04.jpg' %}">Super Mario Bross</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/05.jpg' %}">Minecraft</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/06.jpg' %}">Videogame</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/07.jpg' %}">Mickey Safari</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/08.jpg' %}">Minions</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/13.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/13.jpg' %}">Dinossauros</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/09.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/09.jpg' %}">Cozinheira</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/10.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/10.jpg' %}">Fórmula 1</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure><img src = "{% static 'img/gallery-cupcakes/11.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/11.jpg' %}">Rosas Personalizadas</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/12.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/12.jpg' %}">Festa Junina</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-cupcakes/14.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-cupcakes/14.jpg' %}">Dinossauros</a></h4>
 							</figcaption>
 						</figure>
 					</article>
 				</div>
+					<!-- gallery page 4 -->
+			<div class="row tm-gallery">
+
+				<div id="tm-gallery-page-docinhos" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-docinhos/01.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-docinhos/01.jpg' %}">O Pequeno Príncipe</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/02.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/02.jpg' %}">Branca de Neve</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/03.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/03.jpg' %}">Marinheiro</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/04.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/04.jpg' %}">Homem-aranha</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/05.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/05.jpg' %}">Unicórnio</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/06.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/06.jpg' %}">Batizado - Princesa</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/07.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/07.jpg' %}">Mario Bross</a></h4>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src = "{% static 'img/gallery-3/08.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title"><a href="{% static 'img/gallery-3/08.jpg' %}">Bebê Mustache</a></h4>
+							</figcaption>						</figure>
+					</article>
+
+				</div> <!-- gallery page 4 -->
 			</div>
 		</main>
-
 <footer class="w3-container w3-purple w3-center w3-margin-top">
 	<p class="copyright"> &copy; 2020 À Provençal Festas | Designed by: Amanda Gonçalves <a href="https://www.linkedin.com/in/amandasousagoncalves/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
 		<br>
@@ -114,7 +442,7 @@
 			// Handle click on paging links
 			$('.tm-paging-link').click(function(e){
 				e.preventDefault();
-
+				
 				var page = $(this).text().toLowerCase();
 				$('.tm-gallery-page').addClass('hidden');
 				$('#tm-gallery-page-' + page).removeClass('hidden');

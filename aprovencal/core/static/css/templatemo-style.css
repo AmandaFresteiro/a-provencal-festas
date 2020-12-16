@@ -1,4 +1,5 @@
-ul, nav, body, h1, h2, h4, h6, p, figure {
+
+ul, nav, body, h1, h2, h6, p, figure {
   margin: 0;
   padding: 0;
 }
@@ -6,7 +7,6 @@ ul, nav, body, h1, h2, h4, h6, p, figure {
 h3 {
     text-align: center;
     color: #ffffff;
-
 }
 
 

@@ -1,6 +1,6 @@
+from django.conf import settings
 from django.urls import path
 from .views import contact, home, cakes, party, candy, about, partykit, cakes_photo, start
-from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
